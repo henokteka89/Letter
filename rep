@@ -1,11 +1,1 @@
-Hi Team,
 
-We noticed that the stored procedure storedprocname caused a blockage in our prod environment for over 10 minutes yesterday. It's scanning a large volume of records in dbo.scheduleaudit due to a hardcoded date filter (dateentered > '3/1/2021'), where most records are recent and total over 100 million.
-
-Could we:
-
-Update the hardcoded date to narrow down the scan?
-Run this procedure on the ATL node instead to ease prod load?
-This should help manage performance better without waiting for data purging, as most records are from 2021 onwards.
-
-Thanks for looking into this. Let me know your thoughts.
