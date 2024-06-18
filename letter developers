@@ -1,9 +1,1 @@
-Subject: Urgent: Optimization Needed for High-Resource SQL Query
 
-Dear Developers,
-
-Our query store data reveals the SELECT statement with @BarcodeID (passed as NVARCHAR e.g., N'A10408') as a top resource consumer, due to a mismatch with the SQL table's VARCHAR(20) column. This type discrepancy leads to costly implicit conversions and performance issues.
-
-Please adjust the application to pass BarcodeID as VARCHAR to align with the database and improve efficiency. Quick action on this will significantly reduce resource consumption and enhance overall performance.
-
-Thank you for your cooperation.
